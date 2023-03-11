@@ -12,6 +12,11 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
 img {
     position: absolute;
     top: 40%;
@@ -64,15 +69,7 @@ img {
     flex-direction: column;
     align-items: center;
 }
-#spinner {
-    animation: rotate 0.56s infinite linear;
-    width:50px;
-    height:50px;
-    border:12px solid #fff;
-    border-bottom:12px solid rgb(46, 85, 139);
-    border-radius:50%;
-    margin:0;
-}
+
 @keyframes rotate {
     0% {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
@@ -176,11 +173,18 @@ img {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    transition:0.4s ease-in-out;
+    padding-top: 15px;
 }
 
 #contactinfo p {
     display: inline-block;
     margin-right: 35px;
+}
+
+.contactinfo:hover { 
+    cursor: pointer;
+    color:rgb(46, 85, 139);
 }
 
 #middle table {
@@ -190,6 +194,7 @@ img {
 #middle table tr td {
     text-align:center;
 }
+
 .social {
     color:#fff;
     font-size:22px;
@@ -198,10 +203,13 @@ img {
     margin:0px 8px;
     text-align:center;
 }
+
 .social:hover { 
     cursor: pointer;
-    color:rgb(46, 85, 139);
+    opacity: 0.6;
 }
+
+
 .container {
     width:90vw;
     height:90vh;
@@ -378,13 +386,37 @@ p.education {
 }
 
 
+#contactinfo a {
+    color:#fff;
+    font-size: 18px;
+    transition:0.4s ease-in-out;
+    display: inline-block;
+    margin-right: 35px;
+}
 
+#contactinfo a:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
 
 @media (max-width: 800px){ 
+    .hidden-mobile {
+        display: none !important;
+    }
+
+    #contactinfo a {
+        color:#fff;
+        font-size: 18px;
+        transition:0.4s ease-in-out;
+        display: inline-block;
+        padding-top: 15px;
+        margin: 0;
+    }
+
+
     #about {
         display:none;
     }
-
     #work {
         display:none;
     }
@@ -405,8 +437,14 @@ p.education {
         width:90%;
     }
     #menu {
-        display:inline-block;
+        display: none;
     }
+
+    #middle table {
+        width:35%;
+        margin: 75vh auto;
+    }
+
     #onlywide {
         display:none !important;
     }
