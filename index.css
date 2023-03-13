@@ -167,6 +167,11 @@ img {
     cursor:pointer;
 }
 
+#work_container a:hover {
+    opacity: 0.6;
+}
+
+
 #contactinfo {
     color: #fff;
     font-size: 15px;
@@ -394,8 +399,7 @@ p.education {
     margin-right: 35px;
 }
 
-#contactinfo a:hover {
-    cursor: pointer;
+section.a {
     opacity: 0.6;
 }
 
