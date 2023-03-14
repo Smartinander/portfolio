@@ -169,6 +169,7 @@ img {
 
 #work_container a:hover {
     opacity: 0.6;
+    transition:0.4s ease-in-out;
 }
 
 
@@ -185,11 +186,6 @@ img {
 #contactinfo p {
     display: inline-block;
     margin-right: 35px;
-}
-
-.contactinfo:hover { 
-    cursor: pointer;
-    color:rgb(46, 85, 139);
 }
 
 #middle table {
@@ -397,6 +393,10 @@ p.education {
     transition:0.4s ease-in-out;
     display: inline-block;
     margin-right: 35px;
+}
+
+#contactinfo a:hover {
+    opacity: 0.6;
 }
 
 section.a {
