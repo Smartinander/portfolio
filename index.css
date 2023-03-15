@@ -239,6 +239,9 @@ img {
     max-width: 90%;
 }
 
+#used div h3{
+    font-size:12px !important;
+}
 #used div{
     font-size:14px !important;
     display:inline-block;
@@ -247,6 +250,8 @@ img {
     margin:4px 10px;
     border-radius:50px;    
 }
+
+
 #used:hover {
     cursor:text;
 }
